@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: #111222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.loading{
+    position: relative;
+}
+
+.percent{
+    color: #999;
+    font-size: 100px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.progress-bar{
+    width: 405px;
+    height: 20px;
+    background: #111;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.progress{
+    height: 15px;
+    background: #f60d54;
+    border-radius: 15px;
+}
+
+.text{
+    position: absolute;
+    left: 150px;
+    color: aliceblue;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    display: none;
+}
+
+.text-blink{
+    animation: blink .7s ease-in-out .1s infinite;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
